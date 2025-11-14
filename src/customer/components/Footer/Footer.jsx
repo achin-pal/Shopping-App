@@ -1,120 +1,72 @@
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
+import Stack from "@mui/material/Stack";
 import React from "react";
 
 const Footer = () => {
   return (
     <div>
       <Grid
-        className="bg-black text-white text-center mt-10"
         container
-        spacing={6}
+        spacing={{ xs: 4, sm: 6, md: 8 }}
         sx={{
           bgcolor: "black",
           color: "white",
-          py: 3,
-          justifyContent: "center", // horizontally center items
+          py: 4,
+          textAlign: { xs: "center", md: "left" },
+          justifyContent: "center",
         }}
       >
+        {/* Company */}
         <Grid item xs={12} sm={6} md={3}>
-          <Typography className="pb-5" variant="h6">
-            Company
-          </Typography>
-          <div>
-            <Button className="pb-5" variant="h6" gutterBottom>
-              About
-            </Button>
-          </div>
-          <div>
-            <Button className="pb-5" variant="h6" gutterBottom>
-              Press
-            </Button>
-          </div>
-          <div>
-            <Button className="pb-5" variant="h6" gutterBottom>
-              Blog
-            </Button>
-          </div>
-          <div>
-            <Button className="pb-5" variant="h6" gutterBottom>
-              Jobs
-            </Button>
-          </div>
-          <div>
-            <Button className="pb-5" variant="h6" gutterBottom>
-              Partners
-            </Button>
-          </div>
+          <Stack spacing={1.5} alignItems={{ xs: "center", md: "flex-start" }}>
+            <Typography variant="h6" sx={{ pb: 1 }}>
+              Company
+            </Typography>
+            <Button color="inherit">About</Button>
+            <Button color="inherit">Press</Button>
+            <Button color="inherit">Blog</Button>
+            <Button color="inherit">Jobs</Button>
+            <Button color="inherit">Partners</Button>
+          </Stack>
         </Grid>
 
+        {/* Solutions */}
         <Grid item xs={12} sm={6} md={3}>
-          <Typography className="pb-5" variant="h6">
-            Soultions
-          </Typography>
-          <div>
-            <Button className="pb-5" variant="h4" gutterBottom>
-              Marketing
-            </Button>
-          </div>
-          <div>
-            <Button className="pb-5" variant="h6" gutterBottom>
-              Analytics
-            </Button>
-          </div>
-          <div>
-            <Button className="pb-5" variant="h6" gutterBottom>
-              Commerce
-            </Button>
-          </div>
-          <div>
-            <Button className="pb-5" variant="h6" gutterBottom>
-              Insights
-            </Button>
-          </div>
-          <div>
-            <Button className="pb-5" variant="h6" gutterBottom>
-              Support
-            </Button>
-          </div>
+          <Stack spacing={1.5} alignItems={{ xs: "center", md: "flex-start" }}>
+            <Typography variant="h6" sx={{ pb: 1 }}>
+              Solutions
+            </Typography>
+            <Button color="inherit">Marketing</Button>
+            <Button color="inherit">Analytics</Button>
+            <Button color="inherit">Commerce</Button>
+            <Button color="inherit">Insights</Button>
+            <Button color="inherit">Support</Button>
+          </Stack>
         </Grid>
 
+        {/* Documentation */}
         <Grid item xs={12} sm={6} md={3}>
-          <Typography className="pb-5" variant="h6">
-            Documentation
-          </Typography>
-          <div>
-            <Button className="pb-5" variant="h6" gutterBottom>
-              Guids
-            </Button>
-          </div>
-          <div>
-            <Button className="pb-5" variant="h6" gutterBottom>
-              Api Support
-            </Button>
-          </div>
+          <Stack spacing={1.5} alignItems={{ xs: "center", md: "flex-start" }}>
+            <Typography variant="h6" sx={{ pb: 1 }}>
+              Documentation
+            </Typography>
+            <Button color="inherit">Guides</Button>
+            <Button color="inherit">API Support</Button>
+          </Stack>
         </Grid>
 
+        {/* Legal */}
         <Grid item xs={12} sm={6} md={3}>
-          <Typography className="pb-5" variant="h6">
-            Legal
-          </Typography>
-          <div>
-            <Button className="pb-5" variant="h6" gutterBottom>
-              Claims
-            </Button>
-          </div>
-          <div>
-            <Button className="pb-5" variant="h6" gutterBottom>
-              Privacy
-            </Button>
-          </div>
-          <div>
-            <Button className="pb-5" variant="h6" gutterBottom>
-              Terms
-            </Button>
-          </div>
-          
+          <Stack spacing={1.5} alignItems={{ xs: "center", md: "flex-start" }}>
+            <Typography variant="h6" sx={{ pb: 1 }}>
+              Legal
+            </Typography>
+            <Button color="inherit">Claims</Button>
+            <Button color="inherit">Privacy</Button>
+            <Button color="inherit">Terms</Button>
+          </Stack>
         </Grid>
       </Grid>
     </div>

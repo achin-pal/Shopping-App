@@ -25,8 +25,11 @@ const Main_carousel = () => {
 ];
 
 
-    const items = mainCrouselData.map((item)=><img  className='cursor-pointer' 
-    role= 'presentation' src={item.image}/>)
+    const items = mainCrouselData.map((item)=><img
+  className="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover cursor-pointer"
+  role="presentation"
+  src={item.image}
+/>)
   return (
     <AliceCarousel
         mouseTracking
