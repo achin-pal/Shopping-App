@@ -8,7 +8,7 @@ const AddressCard = () => {
         <p>Ayodhya Ram Mandir</p>
         <div className='space-y-1'>
             <p className='font-semibold'>Contact</p>
-            <p>777777777</p>
+            <p>9654117770</p>
         </div>
       </div>
       
